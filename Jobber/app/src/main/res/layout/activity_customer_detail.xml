@@ -1,0 +1,208 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:tools="http://schemas.android.com/tools"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:paddingLeft="@dimen/activity_horizontal_margin"
+                android:paddingRight="@dimen/activity_horizontal_margin"
+                android:paddingTop="@dimen/activity_vertical_margin"
+                android:paddingBottom="@dimen/activity_vertical_margin"
+                tools:context="calc.aca.android.zidansuid.com.Jobber">
+
+
+    <Button
+        android:textColor="#FFFFFF"
+        android:textSize="20sp"
+        android:layout_width="100dp"
+        android:layout_height="47dp"
+        android:background="@drawable/buttonshape"
+        android:shadowColor="#FF0537"
+        android:shadowDx="0"
+        android:shadowDy="0"
+        android:shadowRadius="5"
+        android:text="Close"
+        android:id="@+id/btnClose"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="Name"
+        android:id="@+id/mCustomer"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_toLeftOf="@+id/editCustName"
+        android:layout_toStartOf="@+id/editCustName"
+        android:layout_above="@+id/editCustBusiness"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="Business"
+        android:id="@+id/mCustBusiness"
+        android:layout_toLeftOf="@+id/editAddress1"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_above="@+id/editAddress1"/>
+
+    <Button
+        android:textColor="#FFFFFF"
+        android:textSize="20sp"
+
+        android:layout_width="100dp"
+        android:layout_height="47dp"
+        android:background="@drawable/buttonshape"
+        android:shadowColor="#FF0537"
+        android:shadowDx="0"
+        android:shadowDy="0"
+        android:shadowRadius="5"
+        android:text="Delete"
+        android:id="@+id/btnDelete"
+        android:layout_alignParentBottom="true"
+        android:layout_alignLeft="@+id/mCustBusiness"
+        android:layout_alignStart="@+id/mCustBusiness"/>
+
+    <Button
+        android:textColor="#FFFFFF"
+        android:textSize="20sp"
+
+        android:layout_width="100dp"
+        android:layout_height="47dp"
+        android:background="@drawable/buttonshape"
+        android:shadowColor="#FF0537"
+        android:shadowDx="0"
+        android:shadowDy="0"
+        android:shadowRadius="5"
+        android:text="Save"
+        android:id="@+id/btnSave"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"/>
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="textPersonName"
+        android:ems="10"
+        android:id="@+id/editCustName"
+        android:layout_above="@+id/editCustBusiness"
+        android:layout_alignLeft="@+id/editCustBusiness"
+        android:layout_alignStart="@+id/editCustBusiness"/>
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="textEmailAddress"
+        android:ems="10"
+        android:id="@+id/editEmail"
+        android:layout_above="@+id/btnClose"
+        android:layout_alignLeft="@+id/btnSave"
+        android:layout_alignStart="@+id/btnSave"
+        android:layout_marginBottom="83dp"/>
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:id="@+id/editPhone"
+        android:inputType="phone"
+        android:layout_above="@+id/editEmail"
+        android:layout_alignLeft="@+id/editEmail"
+        android:layout_alignStart="@+id/editEmail"/>
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="text|textEmailAddress"
+        android:ems="10"
+        android:id="@+id/editAddress2"
+        android:layout_above="@+id/editPhone"
+        android:layout_alignLeft="@+id/editPhone"
+        android:layout_alignStart="@+id/editPhone"/>
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="text|textEmailAddress"
+        android:ems="10"
+        android:id="@+id/editAddress1"
+        android:layout_above="@+id/editAddress2"
+        android:layout_alignLeft="@+id/editAddress2"
+        android:layout_alignStart="@+id/editAddress2"/>
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="text"
+        android:ems="10"
+        android:id="@+id/editCustBusiness"
+        android:layout_above="@+id/editAddress1"
+        android:layout_toEndOf="@+id/mCustBusiness"
+        android:layout_toRightOf="@+id/mCustBusiness"/>
+
+
+
+    <TextView
+        android:text="Customer Information"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/textView2"
+        android:gravity="center"
+        android:textSize="25sp"
+        android:textStyle="bold|italic"
+        android:layout_above="@+id/editCustName"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginBottom="70dp"
+        android:layout_alignRight="@+id/editCustName"
+        android:layout_alignEnd="@+id/editCustName"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="Email"
+        android:id="@+id/mCustEmail"
+        android:layout_alignBottom="@+id/editEmail"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_toLeftOf="@+id/editEmail"
+        android:layout_toStartOf="@+id/editEmail"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="Phone"
+        android:id="@+id/mCustPhone"
+        android:layout_above="@+id/editEmail"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_toLeftOf="@+id/editEmail"
+        android:layout_toStartOf="@+id/editEmail"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="Address2"
+        android:id="@+id/mCustAddress2"
+        android:layout_above="@+id/editPhone"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_toLeftOf="@+id/editPhone"
+        android:layout_toStartOf="@+id/editPhone"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="Address1"
+        android:id="@+id/mCustAddress1"
+        android:layout_above="@+id/editAddress2"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_toLeftOf="@+id/editAddress2"
+        android:layout_toStartOf="@+id/editAddress2"/>
+
+</RelativeLayout>

@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical" android:layout_width="match_parent"
+              android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="622dp"
+        android:weightSum="1"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:text="Customer Information"
+            android:id="@+id/textView"
+            android:layout_weight="0.05"
+            android:textStyle="bold|italic"
+            android:textSize="40dp"
+            android:layout_gravity="bottom"
+            android:textAlignment="center" />
+
+
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/Ename"
+            android:textSize="25dp"
+            android:textStyle="bold"
+            android:layout_gravity="top"
+            android:hint="Contact Name"
+            android:layout_weight="0.05"
+            android:layout_marginTop="20dp"
+            android:layout_below="@+id/textView"
+            android:layout_alignLeft="@+id/Email"
+            android:layout_alignStart="@+id/Email"
+            android:layout_alignRight="@+id/Ephone"
+            android:layout_alignEnd="@+id/Ephone"/>
+
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/Ebusiness"
+            android:textSize="25dp"
+            android:textStyle="bold"
+            android:layout_gravity="top"
+            android:hint="Business Name"
+            android:layout_weight="0.05"
+            android:layout_below="@+id/Ename"
+            android:layout_alignLeft="@+id/Ename"
+            android:layout_alignStart="@+id/Ename"
+            android:layout_alignRight="@+id/Ephone"
+            android:layout_alignEnd="@+id/Ephone"/>
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="textPostalAddress"
+            android:ems="10"
+            android:id="@+id/Eaddress1"
+            android:textSize="25dp"
+            android:textStyle="bold"
+            android:layout_gravity="top"
+            android:hint="Contact Address Line 1"
+            android:layout_weight="0.05"
+            android:layout_marginTop="38dp"
+            android:layout_below="@+id/Ename"
+            android:layout_alignLeft="@+id/Ebusiness"
+            android:layout_alignStart="@+id/Ebusiness"
+            android:layout_alignRight="@+id/Ephone"
+            android:layout_alignEnd="@+id/Ephone"/>
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="textPostalAddress"
+            android:ems="10"
+            android:id="@+id/Eaddress2"
+            android:textSize="25dp"
+            android:textStyle="bold"
+            android:layout_gravity="top|bottom"
+            android:hint="Contact Address Line  2"
+            android:layout_weight="0.05"
+            android:layout_below="@+id/Eaddress1"
+            android:layout_alignLeft="@+id/Eaddress1"
+            android:layout_alignStart="@+id/Eaddress1"
+            android:layout_alignRight="@+id/Ephone"
+            android:layout_alignEnd="@+id/Ephone"/>
+
+        <EditText
+            android:layout_width="353dp"
+            android:layout_height="wrap_content"
+            android:inputType="phone"
+            android:ems="10"
+            android:id="@+id/Ephone"
+            android:textSize="25dp"
+            android:textStyle="bold"
+            android:layout_gravity="top"
+            android:hint="Contact Phone Number"
+            android:layout_below="@+id/Eaddress2"
+            android:layout_alignRight="@+id/Email"
+            android:layout_alignEnd="@+id/Email"/>
+
+        <EditText
+            android:layout_width="354dp"
+            android:layout_height="wrap_content"
+            android:inputType="textEmailAddress"
+            android:ems="10"
+            android:id="@+id/Email"
+            android:textSize="25dp"
+            android:textStyle="bold"
+            android:layout_gravity="top"
+            android:hint="Contact Email"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@+id/Ephone"/>
+
+        <Button
+            android:text="Delete"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_marginLeft="11dp"
+            android:layout_marginStart="11dp"
+            android:layout_marginBottom="36dp"
+            android:id="@+id/btnDelete"/>
+
+        <Button
+            android:text="Insert"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/btnInsert"
+            android:layout_alignBaseline="@+id/btnSelect"
+            android:layout_alignBottom="@+id/btnSelect"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginRight="20dp"
+            android:layout_marginEnd="20dp"/>
+
+        <Button
+            android:text="Select All"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/btnSelect"
+            android:layout_alignBaseline="@+id/btnDelete"
+            android:layout_alignBottom="@+id/btnDelete"
+            android:layout_toRightOf="@+id/btnDelete"
+            android:layout_toEndOf="@+id/btnDelete"/>
+
+        <Button
+            android:text="Search"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/btnSearch"
+            android:layout_alignTop="@+id/btnSelect"
+            android:layout_toLeftOf="@+id/btnInsert"
+            android:layout_toStartOf="@+id/btnInsert"/>
+
+    </RelativeLayout>
+
+
+</LinearLayout>

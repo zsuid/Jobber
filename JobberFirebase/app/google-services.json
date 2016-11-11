@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "655710933714",
+    "firebase_url": "https://jobber-a8bef.firebaseio.com",
+    "project_id": "jobber-a8bef",
+    "storage_bucket": "jobber-a8bef.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:655710933714:android:67bd6f3f046a15e4",
+        "android_client_info": {
+          "package_name": "calc.aca.android.zidansuid.com.jobber"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "655710933714-t84q9mmrujhpdldjr9d1pm9vmpcimagj.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "calc.aca.android.zidansuid.com.jobber",
+            "certificate_hash": "664DD7DA72DFE02C31C96DCF92379762B35E3418"
+          }
+        },
+        {
+          "client_id": "655710933714-c0bgoht898qim1ovmtp5oq3joea49ocu.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBMOp9w7FKowfnHUPKmVGidPrPGyqPuczo"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "655710933714-c0bgoht898qim1ovmtp5oq3joea49ocu.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
